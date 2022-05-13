@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_weight="1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/uok" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#45FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:ems="5"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:shadowColor="#2575a9"
+                android:textAlignment="center"
+                android:textColor="#2575a9"
+                android:textColorHighlight="#2575a9"
+                android:textColorLink="#2575a9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Your Last CGPA"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:background="#45FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:ems="5"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:inputType="number"
+                android:shadowColor="#2575a9"
+                android:textAlignment="center"
+                android:textColor="#2575a9"
+                android:textColorHighlight="#2575a9"
+                android:textColorLink="#2575a9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Cumulative hours"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2575a9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="old mark if repeated"
+                android:textAlignment="gravity"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="mark"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="number hours"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="subject"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.55">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#28050505"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject  "
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject1"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject2"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject3"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject4"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject5"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject6"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject7"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject8"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold"
+                        tools:ignore="NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:shadowColor="#2575a9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#2575a9"
+                        android:textColorLink="#2575a9"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#88FFFFFF"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="subject9"
+                        android:textAlignment="center"
+                        android:textColor="#2575a9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#60FFFFFF"
+                android:backgroundTintMode="src_in"
+                android:onClick="GPAs"
+                android:text="GPA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="GPA"
+                android:textAlignment="center"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#60FFFFFF"
+                android:backgroundTintMode="src_in"
+                android:onClick="GPAa"
+                android:text="CGPA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="CGPA"
+                android:textAlignment="center"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Rest"
+                android:text="RESET" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

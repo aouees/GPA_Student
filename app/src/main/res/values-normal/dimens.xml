@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="text_size" tools:ignore="MissingDefaultResource">30sp</dimen>
+    <dimen name="tz" tools:ignore="MissingDefaultResource">20sp</dimen>
+
+</resources>
